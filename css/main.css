@@ -57,5 +57,35 @@ body{
     text-align: center;
 }
 
+.newsfeed-global{
+    padding-top: 10%;
+   
+}
+
+.border{
+border: 1px solid black;
+}
+
+.center{
+text-align: center;
+}
+
+
+
+.user-photo{
+    background-image: url("../assets/images/prueba.JPEG");
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 10em;
+    height: 10em;
+    border:solid black 1px; 
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
 
 
