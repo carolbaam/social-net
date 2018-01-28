@@ -6,7 +6,7 @@ body{
     font-family: 'Amatic SC', cursive;
     padding-top: 30%;
     max-width: 1300px;
-    padding: 0px;
+    padding: 6px;
 }
 
 .container-fluid{
@@ -86,6 +86,21 @@ text-align: center;
 .left{
     text-align: left;
 }
+
+#message-text:focus{
+    outline: none;
+
+}
+.glyphicon{
+    font-size: 200%;
+    padding: 5%;
+    
+}
+
+.header-ciudad{
+    font-size: 200%;
+}
+
 
 
 
