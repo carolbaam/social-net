@@ -149,3 +149,12 @@ text-align: center;
     overflow:visible;
     cursor: pointer;
   }
+
+  p{
+      font-size: 200%;
+  }
+
+  .img-thumbnail{
+      height: 100%;
+      width: 100%;
+  }
