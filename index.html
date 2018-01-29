@@ -1,170 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Amaranth|Amatic+SC" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-   
-<!-- Optional theme -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"> 
-<link rel="stylesheet" href="css/main.css">  
-<title>Document</title>
-</head>
-<body>
-<div class="container-fluid clearfix">
-    <div class="row">
-        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="row">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
-                    <span class="col-lg-2  col-md-2 hidden-xs hidden-sm " id="logo"><strong>MINERVA</strong></span>
-                    <div class=" container-icons col-sm-2 col-xs-2 glyphicon glyphicon-plus hidden-lg hidden-md " data-toggle="modal" data-target="#myModal"></div>
-                    <div class=" col-sm-8 col-xs-8  hidden-lg hidden-md " id="logo">MINERVA</div>
-                    <div class="  col-sm-2 col-xs-2  glyphicon glyphicon-camera hidden-lg hidden-md"></div>
-                    <span class="form-group col-lg-2  col-md-2 hidden-xs hidden-sm">
-                        <input type="text" class="form-control " placeholder="Search" >
-                    </span>
-                    <div class=" container-icons col-lg-4 col-md-4 col-lg-offset-4  col-md-offset-4 hidden-xs hidden-sm pull right">
-                        <span class="glyphicon glyphicon-envelope margin-left"></span>
-                        <span class="glyphicon glyphicon-th-large margin-left"></span>
-                        <span class="glyphicon glyphicon-eye-open margin-left" onclick="window.location.href='views/explorar.html'"></span>
-                        <span class="glyphicon glyphicon-bookmark margin-left"></span>
-                        <span class="glyphicon glyphicon-user " onclick="window.location.href='views/usuario.html'"></span>
-                    </div>
-                </div>
-            </nav>
-        </div>
+    <title>Red Social</title>
+  </head>
+  <body>
+    <div id="brand" class="bg-color">
+    <div>
+      <figure class="effect">
+        <img src="assets/images/logo.png" class="img-responsive" alt="logo" width="150">
+
+      </figure>
+      <h1 class="appName">Minerva</h1>
     </div>
+    <button type="button" id="login" name="button"></button>
   </div>
-</div>
-
-<!--contenedor para barra solo mobil-->
-
-<div class="container-fluid visible-xs visible-sm center">
-<div class="row">
-
-<nav class=" col-sm-12 col-xs-12 navbar navbar-default center second-bar-mobile" id="mobil-nav">
-    <div class="row ">
-           
-            <span class=" col-sm-1 col-xs-1  glyphicon glyphicon-home icons" onclick="window.location.href='index.html'"></span>
-            <span class=" col-sm-1 col-xs-1 col-xs-2 glyphicon glyphicon-map-marker" onclick="window.location.href='views/city-first.html'"></span>
-            <span class=" col-sm-1 col-xs-1 col-xs-offset-5 col-sm-offset-5 glyphicon glyphicon-bookmark"></span>
-            <span class="col-sm-1 col-xs-1  glyphicon glyphicon-search" onclick="window.location.href='views/explorar.html'"></span>
-            <span class="col-sm-1 col-xs-1   glyphicon glyphicon-user" onclick="window.location.href='views/usuario.html'"></span>
-    
-
-        </div>
-      </nav>
-    </div>
-</div>
-
-<!--seccion preincipal desktop-->
-<main class="container-fluid newsfeed-global ">
-    <div class="row">
-        <div class="col-lg-12 col-md-12">
-            <!--ICONOS-->
-            <div class="row hidden-sm hidden-xs">
-                <section class="col-lg-8 col-md-8 col-xs-12 col-sm-12 ">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 center ">
-                            <span class="glyphicon glyphicon-plus big-icon" data-toggle="modal" data-target="#myModal" ></span>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 center">
-                            <span class="glyphicon glyphicon-camera big-icon"></span> 
-                        </div>
-                    </div>
-                </section>
-                <section class="col-lg-3 col-md-3 hidden-xs hidden-sm  center header-ciudad" onclick="window.location.href='views/city-first.html'">Tu ciudad</section>
-                
-            </div>
-           <!--seccion de noticias de amigos  -->
-        <div class="row">
-            <section class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 col-xs-12 col-sm-12 center border">
-                <div class="friend-publication">
-                    <h2>nombre del usuario</h2>
-                    <div>
-                        <img  class="img-thumbnail"src="http://lorempixel.com/400/400/sports" alt="">
-                    </div>
-                    <span class="glyphicon glyphicon-heart"></span>
-                    <span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal"></span>
-                    <span class="glyphicon glyphicon-tag"></span>
-                    <span class="glyphicon glyphicon-bookmark"></span>
-                </div>
-            </section>
- <!--seccion ciudad dentro de la misma row -->
-            <section class="col-lg-4 col-md-4   hidden-sm hidden-xs center border margin-left">
-                    <div class="friend-publication">
-                        <h2>nombre del usuario</h2>
-                        <div>
-                            <img class="img-thumbnail" src="http://lorempixel.com/200/200/sports" alt="">
-                        </div>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal"></span>
-                        <span class="glyphicon glyphicon-tag"></span>
-                        <span class="glyphicon glyphicon-bookmark"></span>
-                    </div>
-                </section>
-        
-         </div>
-        
-         
-<!-- otra row -->
-        <div class="row">
-                <section class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 col-xs-12 col-sm-12 center border">
-                    <div class="friend-publication">
-                        <h2>nombre del usuario</h2>
-                        <div>
-                        <p class="img-thumbnail cortar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor id eveniet ab iure quaerat nostrum quasi quod illo consequatur inventore tenetur dolore vel amet, eaque distinctio voluptate cumque perspiciatis!</p>    
-                        </div>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal"></span>
-                        <span class="glyphicon glyphicon-tag"></span>
-                        <span class="glyphicon glyphicon-bookmark"></span>
-                    </div>
-                </section>
-            </div>
-       <!--termina seccion de publicaciones -->
-        </div>
-    </div>
-</main>
+  <!--loging-->
 
 
 
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
 
-<!--modal para publicar-->
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 
-<div class="modal fade"  id="myModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Publicar</h4>
-            </div>
-            <div class="form-group">
-                    <label for="message-text" class="control-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
-                  </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Publícalo!</button>
-            </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="js/loguin.js">
 
-
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-     <script  src="app.js"></script>
+</script>
 </body>
 </html>
