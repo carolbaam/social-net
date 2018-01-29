@@ -35,7 +35,7 @@
                         <span class="glyphicon glyphicon-envelope"></span>
                         <span class="glyphicon glyphicon-th-large"></span>
                         <span class="glyphicon glyphicon-eye-open"></span>
-                        <span class="glyphicon glyphicon-folder-close"></span>
+                        <span class="glyphicon glyphicon-bookmark"></span>
                         <span class="glyphicon glyphicon-user"></span>
                     </div>
                 </div>
@@ -54,10 +54,10 @@
     <div class="row">
            
             <span class=" col-sm-1 col-xs-1 glyphicon glyphicon-home" onclick="window.location.href='../index.html'"></span>
-            <span class=" col-sm-2 col-xs-2 glyphicon glyphicon-map-marker" onclick="window.location.href='city-first.html'"></span>
-            <span class=" col-sm-2 col-xs-12 col-xs-offset-5 col-sm-offset-5 glyphicon glyphicon-folder-close"></span>
-            <span class="col-sm-2 col-xs-2 glyphicon glyphicon-search"></span>
-            <span class="col-sm-2 col-xs-2 glyphicon glyphicon-user"></span>
+            <span class=" col-sm-1 col-xs-1 glyphicon glyphicon-map-marker" onclick="window.location.href='city-first.html'"></span>
+            <span class=" col-sm-1 col-xs-1 col-xs-offset-5 col-sm-offset-5 glyphicon glyphicon-bookmark"></span>
+            <span class="col-sm-1 col-xs-1 glyphicon glyphicon-search"></span>
+            <span class="col-sm-1 col-xs-1 glyphicon glyphicon-user"></span>
            
 
         </div>
@@ -66,7 +66,7 @@
 </div>
 
 <!--seccion preincipal-->
-<main class="container-fluid  newsfeed-global"  >
+<main class="container-fluid  newsfeed-global" id="user-padding-publications" >
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" id="user-padding-publications">
             <div class="row">
@@ -86,6 +86,7 @@
                         <div class="row">
                                 <span class="col-lg-4 col-md-4 col-xs-4 col-sm-4 left">Siguiendo</span>
                             </div>
+                            
                        
                    
                 </div>
@@ -101,7 +102,8 @@
                                 <div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor id eveniet ab iure quaerat nostrum quasi quod illo consequatur inventore tenetur dolore vel amet, eaque distinctio voluptate cumque perspiciatis!</p>    
                                 </div>
-                                <span class="glyphicon glyphicon-pencil"></span>
+                               
+                                <span class="glyphicon glyphicon-pencil " data-toggle="modal" data-target="#myModal"></span>
                                 <span class="glyphicon glyphicon-tag"></span>
                                 <span class="glyphicon glyphicon-bookmark"></span>
                             </div>
@@ -111,9 +113,10 @@
                                 <div class="friend-publication">
                                     <h2>Título</h2>
                                     <div>
-                                        <img src="http://lorempixel.com/400/400/sports" alt="">
+                                        
                                     </div>
-                                    <span class="glyphicon glyphicon-pencil"></span>
+                                   
+                                    <span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal"></span>
                                     <span class="glyphicon glyphicon-tag"></span>
                                     <span class="glyphicon glyphicon-bookmark"></span>
                                 </div>
@@ -125,7 +128,8 @@
                                         <div>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor id eveniet ab iure quaerat nostrum quasi quod illo consequatur inventore tenetur dolore vel amet, eaque distinctio voluptate cumque perspiciatis!</p>    
                                         </div>
-                                        <span class="glyphicon glyphicon-pencil"></span>
+                                       
+                                        <span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal"></span>
                                         <span class="glyphicon glyphicon-tag"></span>
                                         <span class="glyphicon glyphicon-bookmark"></span>
                                     </div>

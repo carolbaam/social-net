@@ -6,7 +6,7 @@ body{
     font-family: 'Amatic SC', cursive;
     padding-top: 30%;
     max-width: 1300px;
-    padding: 6px;
+    padding: 5%;
 }
 
 .container-fluid{
@@ -29,14 +29,16 @@ body{
     text-align: center;
 }
 
+#logo:hover{
+   color:white;
+   cursor: pointer;
+}
+
 .form-control{
     margin-top: 5%;
 }
 
-.glyphicon{
-    width: 10%;
-  
-}
+
 
 .container-icons{
     text-align: center;
@@ -92,25 +94,33 @@ text-align: center;
 
 }
 .glyphicon{
-    font-size: 200%;
+    font-size: 150%;
     padding: 5%;
   
     
 }
 
+.glyphicon:hover{
+    color:white;
+    cursor: pointer;
+  
+    
+}
+
 .header-ciudad{
-    font-size: 200%;
-    padding: 0px;
+    font-size: 400%;
+    padding-bottom: 5%;
 }
 
 .margin-left{
- margin-left: 4%;
+ margin-left: 3%;
 }
 
 #user-padding-publications{
     margin-bottom:10%;
     margin-top: 5%;
     text-align: center;
+    padding-top:0px; 
 }
 
 #map{
@@ -120,3 +130,6 @@ text-align: center;
 
 
 
+.big-icon{
+    font-size: 300%;
+}
