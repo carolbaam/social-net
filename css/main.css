@@ -66,6 +66,7 @@ body{
 
 .border{
 border: 2px solid black;
+border-radius: 5%;
 }
 
 .center{
@@ -158,3 +159,22 @@ text-align: center;
       height: 100%;
       width: 100%;
   }
+
+  .p-small{
+      font-size: 100%;
+  }
+
+  .friend-suggestions{
+      margin-bottom: 10%;
+  }
+
+ .btn-primary{
+     background: rgb(209, 146, 190);
+     padding: 4%;
+     margin: 4%;
+ }
+
+ .btn-primary:hover{
+     background: white;
+     color:black;
+ }
