@@ -133,3 +133,19 @@ text-align: center;
 .big-icon{
     font-size: 300%;
 }
+
+.cortar{
+    width:200px;
+    height:20px;
+    padding:20px;
+    
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+    overflow:hidden; 
+  }
+  .cortar:hover {
+    width: auto;
+    white-space: initial;
+    overflow:visible;
+    cursor: pointer;
+  }
