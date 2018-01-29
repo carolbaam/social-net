@@ -94,11 +94,16 @@ text-align: center;
 .glyphicon{
     font-size: 200%;
     padding: 5%;
+  
     
 }
 
 .header-ciudad{
     font-size: 200%;
+}
+
+.margin-left{
+ margin-left: 4%;
 }
 
 

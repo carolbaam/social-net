@@ -32,11 +32,11 @@
                         <input type="text" class="form-control" placeholder="Search">
                     </span>
                     <div class=" container-icons col-lg-4 col-md-4 col-lg-offset-4  col-md-offset-4 hidden-xs hidden-sm pull-right">
-                        <span class="glyphicon glyphicon-envelope"></span>
-                        <span class="glyphicon glyphicon-th-large"></span>
-                        <span class="glyphicon glyphicon-eye-open"></span>
-                        <span class="glyphicon glyphicon-folder-close"></span>
-                        <span class="glyphicon glyphicon-user" onclick="window.location.href='views/usuario.html'"></span>
+                        <span class="glyphicon glyphicon-envelope margin-left"></span>
+                        <span class="glyphicon glyphicon-th-large margin-left"></span>
+                        <span class="glyphicon glyphicon-eye-open margin-left"></span>
+                        <span class="glyphicon glyphicon-folder-close margin-left"></span>
+                        <span class="glyphicon glyphicon-user margin-left" onclick="window.location.href='views/usuario.html'"></span>
                     </div>
                 </div>
             </nav>
@@ -66,10 +66,11 @@
 </div>
 
 <!--seccion preincipal desktop-->
-<main class="container-fluid newsfeed-global hidden-sm hidden-xs">
+<main class="container-fluid newsfeed-global ">
     <div class="row">
         <div class="col-lg-12 col-md-12">
-            <div class="row">
+            <!--ICONOS-->
+            <div class="row hidden-sm hidden-xs">
                 <section class="col-lg-8 col-md-8 col-xs-12 col-sm-12 ">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 center ">
@@ -82,9 +83,32 @@
                 </section>
                 <section class="col-lg-4 col-md-4 hidden-xs hidden-sm  center header-ciudad">Tu ciudad</section>
             </div>
-           
-                
-       
+           <!--seccion de noticias de amigos  -->
+        <div class="row">
+            <section class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 col-xs-12 col-sm-12 center border">
+                <div class="friend-publication">
+                    <h3>nombre del usuario</h3>
+                    <div>
+                        <img src="http://lorempixel.com/400/400/sports" alt="">
+                    </div>
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    <span class="glyphicon glyphicon-tag"></span>
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+                <section class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 col-xs-12 col-sm-12 center border">
+                    <div class="friend-publication">
+                        <h3>nombre del usuario</h3>
+                        <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor id eveniet ab iure quaerat nostrum quasi quod illo consequatur inventore tenetur dolore vel amet, eaque distinctio voluptate cumque perspiciatis!</p>    
+                        
+                        </div>
+                    </div>
+                </section>
+            </div>
+       <!--termina seccion de publicaciones -->
         </div>
     </div>
 </main>
