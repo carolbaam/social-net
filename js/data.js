@@ -3,7 +3,7 @@ var data = [
   {
   'type':'exposición Modos de Ver',
   'name':'Museo Carrillo Gil',
-  'image': '../assets/images/modos.png',
+  'image':'http://www.mexicoescultura.com/galerias/actividades/principal/modos_260.png',
   'date':'26 de Enero a 29 de Abril',
   'hour':'10:00 a 18:00 hrs',
   'address':'Av. Revolución 1608, Álvaro Obregón,Ciudad de México, CDMX',
@@ -12,7 +12,7 @@ var data = [
 {
   'type':'exposición Zapata Doble',
   'name':'Museo de Arte Moderno',
-  'image':'../assets/images/zapata.png',
+  'image':'http://www.mexicoescultura.com/galerias/actividades/principal/zapata_doble_02.jpg',
   'date':'17 de Noviembre a 18 de Febrero',
   'hour':'10:15 a 17:30',
   'address':'Paseo de la Reforma y Gandhi S/N, Bosque de Chapultepec I Secc,Miguel Hidalgo, CDMX',
@@ -21,7 +21,7 @@ var data = [
 {
   'type':'exposición Arte / Sano',
   'name':'Museo de arte popular',
-  'image':'../assets/images/sano.png',
+  'image':'http://www.mexicoescultura.com/galerias/actividades/principal/arte_sano_900_900.jpg',
   'date':'25 de Noviembre a 25 de Febrero',
   'hour':'10:00 a 18:00 hrs',
   'address':'Revillagigedo 11, Centro,Ciudad de México, CDMX',
@@ -30,7 +30,7 @@ var data = [
 {
   'type':'Entrecuentos me encuentro ',
   'name':'Foro Shakespeare',
-  'image':'../assets/images/cuentos.png',
+  'image':'http://s1.ticketm.net/tm/es-mx/dbimages/292604a.jpg',
   'date':'Domignos',
   'hour':'13:30hrs',
   'address':'Zamora 7, Condesa,Ciudad de México, CDMX',
@@ -39,7 +39,7 @@ var data = [
 {
   'type':'El fantasma en el espejo',
   'name':'López Tarso',
-  'image':'../assets/images/fantasma.png',
+  'image':'http://entretenia.com/wp-content/uploads/2016/11/31130409916_e9da462efd_z-400x242.jpg',
   'date':'Viernes a Domingo',
   'hour':'18:00 a 21:30 hrs',
   'address':'Av. Revolución 1733 Esq. Francisco I. Madero, Col. San Ángel, CDMX',
@@ -48,7 +48,7 @@ var data = [
 {
   'type':'Los Miserables',
   'name':'Telcel',
-  'image':'../assets/images/miserables.png',
+  'image':'http://www.fundacionsiglo.es/web/jcyl/binarios/255/453/evento-los-miserables-415-964021804.jpg',
   'date':'Proximamente',
   'hour':'Proximamente',
   'address':' Miguel de Cervantes Saavedra, Miguel Hidalgo, Granada,Ciudad de México, CDMX',
@@ -57,7 +57,7 @@ var data = [
 {
   'type':'The Realness Tour',
   'name':'Auditorio BlackBerry',
-  'image':'../assets/images/realness.png',
+  'image':'http://s1.ticketm.net/tm/es-mx/dbimages/302758a.jpg',
   'date':'26 de Mayo',
   'hour':'18:00hrs',
   'address':'Tlaxcala 160, Hipódromo Condesa,Ciudad de México, CDMX',
@@ -66,7 +66,7 @@ var data = [
 {
   'type':'Miranda',
   'name':'Metropolitan',
-  'image':'../assets/images/miranda.png',
+  'image':'http://gritaradio.com/files/2017/08/Flyer-Miranda-1.jpg',
   'date':'19 de Abril',
   'hour':'20:30 hrs',
   'address':' Av Independencia 90, Colonia Centro, Centro,Ciudad de México, CDMX',
@@ -75,7 +75,7 @@ var data = [
 {
   'type':'Los Estramboticos 25 aniversarios',
   'name':'Pepsi Center',
-  'image':'../assets/images/estramboticos.png',
+  'image':'http://gritaradio.com/files/2014/05/image004.jpg',
   'date':'10 de Febrero',
   'hour':'19:00 hrs',
   'address':'Calle Dakota s/n, Benito Juarez, Nápoles,Ciudad de México, CDMX',
@@ -84,7 +84,7 @@ var data = [
 {
   'type':'Elixir de amor',
   'name':'Auditorio Nacional',
-  'image':'../assets/images/elixir.png',
+  'image':'http://musicaenmexico.com.mx/wp-content/uploads/2017/03/Elixiramor.jpg',
   'date':'10 de Febrero',
   'hour':'10:55 ',
   'address':'Calle Reforma s/n Miguel Hidalgo,Ciudad de México, CDMX',
@@ -93,7 +93,7 @@ var data = [
 {
   'type':'Rice',
   'name':'Palacio de Bellas Atess',
-  'image':'../assets/images/rice.png',
+  'image':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIsL3O9CQ2Dv1G6ooN6aStbeyII1tcdOCyQ3LU0VFXN5T_95yA4w',
   'date':'16 y 17 de Febrero',
   'hour':'19:00 y 20:00 hrs',
   'address':'Av. Juárez, Centro Histórico,Ciudad de México, CDMX',
