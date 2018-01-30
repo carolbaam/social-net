@@ -1,10 +1,10 @@
 var config = {
-  apiKey: "AIzaSyBqwSqmz7cgkGGCSGhGFXyH9k82gC_8rwM",
-  authDomain: "mi-red-social-ead3e.firebaseapp.com",
-  databaseURL: "https://mi-red-social-ead3e.firebaseio.com",
-  projectId: "mi-red-social-ead3e",
-  storageBucket:"mi-red-social-ead3e.appspot.com",
-  messagingSenderId: "730166358024"
+  apiKey: "AIzaSyCn_9-gfdkdYZluOxNWWBGpd8D9POJAjyw",
+  authDomain: "net-net-ab9a8.firebaseapp.com",
+  databaseURL: "https://net-net-ab9a8.firebaseio.com",
+  projectId: "net-net-ab9a8",
+  storageBucket: "",
+  messagingSenderId: "733149151249"
 };
 firebase.initializeApp(config);
 
@@ -19,21 +19,27 @@ function authGoogle () {
 }
 
 function authentication(provider) {
- firebase.auth().signInWithPopup(provider).then(function(result) {
+ firebase.auth().signInWithPopup(provider)
+ .then(function(result) {
  // This gives you a Google Access Token. You can use it to access the Google API.
  var token = result.credential.accessToken;
+ console.log(token);
  // The signed-in user info.
  var user = result.user;
  console.log(user);
 })
 .catch(function(error) {
  // Handle Errors here.
+ 
  var errorCode = error.code;
+ console.log(errorCode);
  var errorMessage = error.message;
+ console.log(errorMessage);
  // The email of the user's account used.
  var email = error.email;
  // The firebase.auth.AuthCredential type that was used.
  var credential = error.credential;
+ console.log(credential);
  // ...
 });
 
