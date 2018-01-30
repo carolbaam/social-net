@@ -21,8 +21,9 @@ function paintPlaces (lugares) {
 	var  $nombre = $("<h2 />");
 	var  $tipo = $("<h3 />");
 	var  $cuando = $("<p />");
-	var $divImagen=$("<div />")
-	var $button=$("<button />")
+	var $divImagen=$("<div />");
+	var $button=$("<button />");
+	var $imagen=$("<img />");
 	
 
   
@@ -30,17 +31,20 @@ function paintPlaces (lugares) {
 	//  atributos y eventos a los elementos creados en el DOM
 	$button.attr('data-toggle','modal')
 	$button.attr('data-target','#myModalMap')
-	$button.attr('data-addres','address')
-	$button.attr('data-hour','hour')
-	$button.attr('data-cost','cost')
+	$button.attr('data-addres',place.address)
+	$button.attr('data-hour',place.hour)
+	$button.attr('data-cost',place.cost)
+	$imagen.attr('src',place.image);
+	$imagen.addClass('img-thumbnail');
 
 
 	// Asignando valores
 	
+	//$divImagen.val($imagen);
 	$tipo.text(place.type);
 	$nombre.text(place.name);
 	$cuando.text(place.date);
-	$divImagen.html(place.image);
+	$divImagen.html($imagen);
 	$button.text("ver más");
 	$div.append($nombre);
 	$div.append($tipo);
@@ -62,13 +66,13 @@ function paintPlaces (lugares) {
 var paintModal = function() {
 	
 	var hour = $(this).data('hour');
-	var addres = $(this).data('address');
+	var address = $(this).data('address');
 	var cost = $(this).data('cost');
 
 	
-	$('#hora').text(hour);
-	$('#direccion').text(addres);
-	$('#direccion').text(cost);
+	$('#hour').val(hour);
+	$('#address').html(address);
+	$('#cost').html(cost);
 }
 
 
