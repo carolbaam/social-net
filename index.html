@@ -11,17 +11,21 @@
     <title>Minerva</title>
   </head>
   <body>
+    <!-- View splash -->
     <div id="brand" class="bg-color">
-    <div>
-      <figure class="effect">
-        <img src="assets/images/logo.png" class="img-responsive" alt="logo" width="150">
-
+      <figure>
+        <img class="responsive-img effect" src="assets/images/logo.png" alt="logo" width="150">
+        <span id="logo" class="logo_text"><strong>MINERVA</strong></span>
       </figure>
-      <h1 class="appName">Minerva</h1>
-    </div>
-    <button type="button" id="login" name="button" onclick="window.location.href='views/home.html'">acceso</button>
-  </div>
-  <!--loging-->
+
+    </div><!-- End of view splash -->
+    <!-- Star view -->
+    <div id="startView" class="bg-png bg-color">
+      <figure class="logo2"></figure>
+      <div class="btns-start">
+        <img src="assets/images/google.png" id="signin" alt="sign in" width="150">
+      </div>
+    </div><!-- End of star view -->
 
 
   <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
