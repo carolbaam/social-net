@@ -28,7 +28,7 @@ function paintPlaces (lugares) {
 
   
   
-	//  atributos y eventos a los elementos creados en el DOM
+	//  ponemos atributos a los elementos creados en el DOM
 	$button.attr('data-toggle','modal')
 	$button.attr('data-target','#myModalMap')
 	$button.attr('data-addres',place.address)
@@ -41,7 +41,7 @@ function paintPlaces (lugares) {
 
 	// Asignando valores
 	
-	//$divImagen.val($imagen);
+
 	$tipo.text(place.type);
 	$nombre.text(place.name);
 	$cuando.text(place.date);
@@ -117,16 +117,19 @@ function pintarPublicacion(){
 	  var $content=$('#message-text').val();
 
 	  $p1.text($content);
-	  $nombre.text('nombre de usuario')
-      $p2.html(clock());
+	  $p2.html(clock());
+	  $nombre.text("nombre de usuario");
+
 
 	  //atributos
+	  $nombre.addClass('name-comment');
 	  $p1.addClass('img-thumbnail');
 	  $span1.addClass('glyphicon glyphicon-heart');
 	  $span2.addClass('glyphicon glyphicon-pencil');
 	  $span3.addClass('glyphicon glyphicon-tag');
 	  $span4.addClass('glyphicon glyphicon-bookmark');
 	  $sectionCol.addClass( 'border');
+	 
 	//agregar con append
 	  $sectionCol.append($div1);
 	 $div1.append($nombre);

@@ -91,16 +91,19 @@ function pintarNombreFoto() {
   firebase.auth().onAuthStateChanged(function(user) {
     var $photoProfile = $('#photo');
     var $nameUsers = $('#name');
+    var $usersComment = $('.name-comment');
     
       if (user) {
           var displayName = user.displayName;
           var photoURL = user.photoURL;
-          console.log(photoURL);
+         
           var isAnonymous = user.isAnonymous;
           var uid = user.uid;
           
           $photoProfile.attr('src', photoURL);
           $nameUsers.text(displayName);
+          $usersComment.text(displayName);
+          
       }
   });
 }
