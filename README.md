@@ -23,6 +23,9 @@
 * Sábado 27- Investigación técnica, búsqueda de soluciones para implementar posteriormente.
 * Comienzo del diseño, sketch, y planificaión del flujo del programa.
 
+![sketch](assets/images/sketch1.jpg)
+![sketch](assets/images/sketch2.jpg)
+
 * Domingo 28- Maquetado con Bootstrap 3.7 Todo el día.
 
 * Lunes 29- Comienzo de funcionalidad.
