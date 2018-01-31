@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
 }
 
 body{
@@ -28,6 +29,14 @@ body{
     font-size: 300%;
     padding-top: 0px;
     padding-left: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+#logofirst{
+    font-size: 500%;
+    padding-top: 0px;
+    padding-left: 9%;
     padding-bottom: 2%;
     text-align: center;
 }
@@ -224,6 +233,14 @@ text-align: center;
     width: 35vh;
   }
   
+  #ojo{
+ padding-left:10%;
+ width: 80%;
+ height: 130%; 
+  }
+
+
+
   .bg-png {
     background-image: url('../assets/images/login_bg.png');
     background-repeat: no-repeat;
