@@ -138,6 +138,7 @@ function pintarPublicacion(){
 	 $div1.append($span4);
       $div.append($sectionCol);
 	  $("#friend-publication").prepend($div);
+	  $('#message-text').val(" ");
 }
 
 //
