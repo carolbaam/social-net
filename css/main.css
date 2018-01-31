@@ -141,6 +141,9 @@ text-align: center;
     float: left;
 }
 
+#signin{
+    cursor: pointer;
+}
 
 
 .big-icon{
