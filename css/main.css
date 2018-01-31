@@ -200,6 +200,15 @@ text-align: center;
      height: 100%;
  }
 
+ .tamaño-imagen{
+     width: 50%;
+     height: 50%;
+ }
+ #dom-container{
+     text-align: center;
+     ;
+ }
+
 
  /* Efecto Splash */
 
@@ -249,3 +258,4 @@ text-align: center;
       transform:translateY(-75px);
     }
   }
+
