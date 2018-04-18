@@ -1,6 +1,6 @@
 # Minerva
 
-![logo](assets/images/logo.jpg)
+![logo](https://raw.githubusercontent.com/carolbaam/social-net/master/assets/images/logo.jpg)
 
 ## Visión
 
