@@ -1,16 +1,16 @@
 function loadPage() {
 	
 	paintPlaces(data);
+	paintModal(data);
 	
 	$('#publicar').click(pintarPublicacion);
+	$('#myModalMap').click(paintModal);
 }
 
 function paintPlaces (lugares) {
 	
 	lugares.forEach(function(place) {
 	// crear elementos con DOM
-	
-	
 	
 	var $div = $("<div />", {
 	  "id": "dom-container",
@@ -24,10 +24,6 @@ function paintPlaces (lugares) {
 	var $divImagen=$("<div />");
 	var $button=$("<button />");
 	var $imagen=$("<img />");
-	
-
-  
-  
 	//  ponemos atributos a los elementos creados en el DOM
 	$button.attr('data-toggle','modal')
 	$button.attr('data-target','#myModalMap')
@@ -36,12 +32,7 @@ function paintPlaces (lugares) {
 	$button.attr('data-cost',place.cost)
 	$imagen.attr('src',place.image);
 	$imagen.addClass('img-thumbnail');
-
-	
-
-	// Asignando valores
-	
-
+// Asignando valores
 	$tipo.text(place.type);
 	$nombre.text(place.name);
 	$cuando.text(place.date);
@@ -52,28 +43,23 @@ function paintPlaces (lugares) {
 	$div.append($cuando);
 	$div.append($divImagen);
 	$div.append($button);
-
-   
-	// agregamos lo que creamos con el Dom a un elemento existente del html
-  
-  
-	$("#dom-container").prepend($div);
+// agregamos lo que creamos con el Dom a un elemento existente del html
+  $("#dom-container").prepend($div);
 	
   })
 };
   
 
 
- function paintModal() {
-	
-	var hour = $(this).data('hour');
-	var address = $(this).data('address');
-	var cost = $(this).data('cost');
+ function paintModal(lugares) {
+	lugares.forEach(function(place){
 
 	
-	$('#hour').val(hour);
-	$('#address').html(address);
-	$('#cost').html(cost);
+
+	$('#hour').text(place.hour);
+	$('#address').html(place.address);
+	$('#cost').text(place.cost);
+	});
 }
 
 
@@ -107,7 +93,7 @@ function pintarPublicacion(){
 	 
 	  var $sectionCol = $("<section />");
 	  var $div1 = $("<div />");
-	  var  $nombre = $("<h1 />");
+	  var  $usersComment = $("<h1 />");
 	  var  $p1 = $("<p />");
 	  var  $p2 = $("<p />")
 	  var  $span1 = $("<span />");
@@ -118,11 +104,11 @@ function pintarPublicacion(){
 
 	  $p1.text($content);
 	  $p2.html(clock());
-	  $nombre.text("nombre de usuario");
+	  
 
 
 	  //atributos
-	  $nombre.addClass('name-comment');
+	  $usersComment.addClass('.users-comment');
 	  $p1.addClass('img-thumbnail');
 	  $span1.addClass('glyphicon glyphicon-heart');
 	  $span2.addClass('glyphicon glyphicon-pencil');
@@ -132,7 +118,7 @@ function pintarPublicacion(){
 	 
 	//agregar con append
 	  $sectionCol.append($div1);
-	 $div1.append($nombre);
+	 $div1.append($usersComment);
 	 $div1.append($p1);
 	 $div1.append($p2);
 	 $div1.append($span1);
